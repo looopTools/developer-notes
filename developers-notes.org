@@ -1,0 +1,18 @@
+#+TITLE: Developers Notes 
+#+AUTHOR: Lars Nielsen 
+
+* Nifty tools 
+
+*** Code Analysis 
+This sections contains a description of different tools for code analysis, both advanced and simple tools
+
+**** Source Code Line Counters 
+
+In some cases it is nice to know how many lines of code and for this I have used to different tools [[https://dwheeler.com/sloccount/][SLOCCount]] and [[https://github.com/AlDanial/cloc][CLOC]]. 
+At the moment of writing I use CLOC mostly as it is readily available on most major Linux distributions and MacOS and I have had few weird issues with SLOCCount. 
+Both are able to provide a break down of the type of files in a project and give a total line copunt as well which is really nice, in particular if you are mixing languages with in a single project. 
+
+
+
+
+
