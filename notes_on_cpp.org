@@ -1,0 +1,23 @@
+#+TITLE: C++ Developer Notes
+#+AUTHOR: Lars Nielsen
+
+* Print std::array or std::vector with data type without if
+
+This function works in C++11 and above and can be adopted to any datatype and works with std::array and std::vector 
+
+#+BEGIN_SRC c++
+
+  #include <iostream>
+  #include <string>
+
+  template<typename ColType, typename T> void print_col(ColType<std::string> col)
+  {
+      std::cout << "[";
+      auto it = col.begin();
+      for (; it != col.end() - 1; ++it)
+      {
+          std::cout << *it << ", "; 
+      }
+      std::cout << *it << "]\n"; 
+  }
+#+END_SRC
